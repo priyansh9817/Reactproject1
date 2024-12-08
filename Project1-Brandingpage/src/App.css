@@ -1,0 +1,212 @@
+/* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;800&display=swap');
+
+:root {
+  --red: #d81c28;
+  --gray: #2e2e2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+button {
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 32px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  height: 72px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+nav button {
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-weight: 600;
+  color: var(--gray);
+  margin-top: 16px;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.hero-btn button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.shopping p {
+  margin-top: 24px;
+}
+
+.brand-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.brand-icons img {
+  max-height: 50px;
+  width: auto;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 16px;
+  border-radius: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  nav ul {
+    gap: 16px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-btn {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .brand-icons img {
+    max-height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-btn button {
+    font-size: 14px;
+  }
+
+  .brand-icons img {
+    max-height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    gap: 8px;
+  }
+
+  nav button {
+    padding: 6px 12px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 12px;
+  }
+
+  .hero-btn {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .brand-icons img {
+    max-height: 25px;
+  }
+}
