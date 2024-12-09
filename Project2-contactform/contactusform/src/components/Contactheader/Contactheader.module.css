@@ -1,0 +1,14 @@
+.container{
+    padding: 10px;
+}
+.header{
+    padding:50px 0;
+
+}
+.header h1{
+    font-weight: 800;
+    font-size: 48px;
+}
+.header p{
+    padding-top: 19px;
+}
